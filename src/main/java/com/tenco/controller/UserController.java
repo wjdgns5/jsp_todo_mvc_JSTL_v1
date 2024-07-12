@@ -50,11 +50,11 @@ public class UserController extends HttpServlet {
 			// /WEB-INF 는 보안폴더
 			request.getRequestDispatcher("/WEB-INF/views/signIn.jsp").forward(request, response);
 			break;
+			
 		case "/signUp":
 			// 회원 가입 페이지로 보내는 동작 처리
 			request.getRequestDispatcher("/WEB-INF/views/signUp.jsp").forward(request, response);
 			break;
-		
 		
 		default:
 			response.sendError(HttpServletResponse.SC_NOT_FOUND);
